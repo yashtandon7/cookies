@@ -33,8 +33,8 @@ app.get('/remove', function(req, res){
      res.send('user logout successfully'); 
 }); 
   
-app.listen(3000, function(err){ 
+app.listen(process.env.PORT, function(err){ 
      if(err) 
      throw err; 
-     console.log('listening on port 3000'); 
+     console.log('listening on port'+process.env.PORT); 
 }); 
