@@ -1,2 +1,0 @@
-# cookies
-Node cookies example
