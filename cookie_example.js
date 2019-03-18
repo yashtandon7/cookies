@@ -29,7 +29,8 @@ app.get('/getuser', function(req, res){
 }); 
 
 app.get('/remove', function(req, res){   
-     res.clearCookie('userData'); 
+     res.clearCookie('TandonData');
+     res.clearCookie('YashData'); 
      res.send('user logout successfully'); 
 }); 
   
