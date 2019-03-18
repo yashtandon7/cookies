@@ -16,8 +16,6 @@ app.get('/', function(req, res){
    }
 });
 
-app.listen(3000,function(){
-    console.log('I\'m listening..!');
+app.listen(process.env.PORT, function(){
+  console.log("Express server listening");
 });
-
-app.listen(3010);
