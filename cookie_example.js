@@ -26,11 +26,12 @@ app.get('/setuser', function(req, res){
   
 app.get('/getuser', function(req, res){ 
      res.send(req.cookies); 
+     console.log('print cookies');
 }); 
 
 app.get('/remove', function(req, res){   
      res.clearCookie('TandonData');
-     res.clearCookie('YashData'); 
+     res.clearCookie('YashData');
      res.send('user logout successfully'); 
 }); 
   
