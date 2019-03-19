@@ -19,8 +19,8 @@ let user = {
 } 
   
 app.get('/setuser', function(req, res){ 
-     res.cookie("YashData", users, {maxAge: 20000});
-     res.cookie("TandonData", user, {maxAge: 10000});
+     res.cookie("YashData", users, {path:'/home',domain:'localhost',maxAge: 200000, httpOnly: true});
+     res.cookie("TandonData", user, {path:'/url',domain:'localhost',maxAge: 100000});
      res.send('user data added to cookie'); 
 }); 
   
