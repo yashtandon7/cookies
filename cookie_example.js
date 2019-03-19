@@ -20,7 +20,7 @@ let user = {
   
 app.get('/setuser', function(req, res){ 
      res.cookie("YashData", users, {domain:'nodejscookie.herokuapp.com',maxAge: 200000, path:'/getuser'});
-     res.cookie("TandonData", user, {domain:'nodejscookie.herokuapp.com',maxAge: 200000, path:'https://nodejscookie.herokuapp.com/getuser'});
+     res.cookie("TandonData", user, {domain:'nodejscookie.herokuapp.com',maxAge: 200000});
      res.send('user data added to cookie'); 
 }); 
   
